@@ -1,0 +1,270 @@
+body
+{
+    height: auto;
+    background: #181818;
+    overflow-x: hidden;
+}
+
+#con1
+{
+    display: flex;
+    color: #edecd6;
+    min-height: 100vh;
+    height: auto;
+    margin-top: 60px;
+    user-select: none;
+    background:#181818 url("/static/images/cse_background.jpg") no-repeat fixed center;
+    background-size: cover;
+    align-items: center;
+    overflow-x: hidden;
+}
+#con2
+{
+    height:auto;
+    background:#181818;
+}
+nav a
+{
+    color:#ffffff !important;
+}
+a i
+{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    padding: 2.5rem 1rem 2.5rem;
+    transition:0.2s;
+}
+#summary
+{
+    background: url("/static/Images/detail.jpg") fixed no-repeat;
+    background-size: cover;
+    backdrop-filter:blur(100px);
+}
+#cont:after
+{
+    content: '';
+    display: flex;
+    height: 2px;
+    width: 10%;
+    justify-items: center;
+    justify-content: center;
+    background: chartreuse;
+    transition: 0.4s;
+}
+#cont:hover::after
+{
+    width: 10%;
+}
+#cont:before
+{
+    content: '';
+    display: flex;
+    height: 2px;
+    width: 50%;
+    justify-items: center;
+    justify-content: center;
+    background: blueviolet;
+    transition: 0.4s;
+}
+#contact,h3
+{
+    padding-top: 1.8rem;
+}
+#contact,h3,h5
+{
+    color: #edecd6;
+}
+#summary a
+{
+    color: #181818;
+    text-decoration: none;
+}
+#summary a i
+{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3em;
+    padding: 0.5rem;
+    transition: 0.2s;
+}
+#row1
+{
+    padding-top: 12px;
+}
+#r1,#r2
+{
+    user-select: none;
+    border-radius: 10px;
+}
+#r1
+{
+    background: #212121;
+    transition:0.2s linear ;
+    color: #edecd6;
+}
+#r2
+{
+    background: #181818;
+    color: #edecd6;
+    transition:0.2s linear ;
+}
+#r2:hover
+{
+    background:#262626;
+    border: 2px solid #edecd6;
+}
+#r2 h1,#r1 h1
+{
+    color:blueviolet;
+}
+#r1:hover
+{
+    background:#181818;
+    border: 2px solid #edecd6;
+}
+#r2:hover .head,#r1:hover .head
+{
+    color:#edecd6;
+}
+#r1 .head,#r2 .head
+{
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+@media only screen and (min-width: 800px){
+
+    #r2 .head:after,#r1 .head:after
+    {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        height: 2px;
+        width: 0;
+        transition: 1s;
+        background:#edecd6;
+    }
+    #r1:hover .head:after,#r2:hover .head:after
+    {
+        width: 60%;
+    }
+}
+#r2:hover p,#r1:hover p
+{
+    color:greenyellow;
+}
+#thoda
+{
+    max-width: 80%;
+}
+#btn1
+{
+    background:blueviolet;
+}
+#btn1:hover
+{
+    background:transparent;
+    border: 2px solid blueviolet;
+}
+#pad
+{
+    padding-top:80px;
+    padding-bottom:40px;
+    color :blueviolet;
+    font-size:3em;
+}
+#pad:after
+{
+    content: '';
+    display: flex;
+    justify-content:center ;
+    justify-items: center;
+    width: 0;
+    height: 2px;
+    background: blueviolet;
+    transition: 0.5s;
+}
+#pad:hover::after
+{
+    width: 10%;
+}
+#particles-js
+{
+    position: absolute;
+    user-select:none;
+    width: 100%;
+    height:100%;
+}
+.particles-js-canvas-el
+{
+   user-select:none;
+}
+#marquee
+{
+
+    position :absolute;
+    width:100%;
+    word-wrap: normal;
+    top:60px;
+    overflow: hidden;
+    max-height:30px;
+    height:auto;
+}
+
+nav
+{
+    overflow-x:hidden;
+}
+#open
+{
+    font-family: 'Aldrich', serif;
+}
+#dept
+{
+    font-family: 'Grandstander', serif;
+}
+#place
+{
+    font-family: Yeon Sung, serif;
+}
+@media only screen and (max-width: 740px)
+{
+    #info
+    {
+        position: absolute;
+        letter-spacing: 0.1em;
+        height: auto;
+        top: 30%;
+    }
+    #pad
+    {
+        color: #F58529;
+        padding-bottom:10px;
+    }
+    #r1,#r2
+    {
+        background: #181818;
+    }
+    #r1:hover,#r2:hover
+    {
+        background: none;
+        border: none;
+    }
+    #pad:after
+    {
+        background: #447e9b;
+        width: 10%;
+    }
+}
